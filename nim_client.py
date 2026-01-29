@@ -132,7 +132,7 @@ class DeepSeekClient:
             if letter not in word:
                 return False
             for pos in bad_positions:
-                if word[pos - 1] == letter:  # 注意：bad_positions 是从1开始的
+                if word[pos - 1] == letter:
                     return False
 
         # verify not exist

@@ -2,11 +2,13 @@
 An intelligent word guessing solver that combines Wordle game API with DeepSeek big language model. The system intelligently generates rule-based word guesses by analyzing game feedback, achieving automated Wordle game solutions.
 
 ## Project structure
+```
 wordle-solver/
 ├── wordle_solver.py          # Main solver
 ├── nim_client.py             # DeepSeek API Client: LLM Interaction
 ├── .env.example              # Storing API keys
 └── README.md                 # Project Description Document
+```
 
 ## Environmental Requirements
 ```
@@ -24,14 +26,14 @@ DEEPSEEK_API_KEY=YOUR PRIVATE KEY
 ## Configuration parameters
 Game parameters (adjustable)
 ```
-MAX_TTTEMPTS=20 # Maximum attempts
+MAX_ATTEMPTS=20 # Maximum attempts
 WORD_SIZE=5 # Word Length (Standard Wordle)
 BASE_URL = " https://wordle.votee.dev:8000 # Wordle API Address
 ```
 
 API parameters (adjustable)
 ```
-MIN-REQUEST∝VAL=5.0 # Minimum interval for API calls (seconds)
-TEMPERTURE=0.1 # LLM generation temperature (the lower the value, the more stable it is)
-MODEL="deepseek chat" # DeepSeek model used
+min_request_interval=5.0 # Minimum interval for API calls (seconds)
+temperature=0.1 # LLM generation temperature (the lower the value, the more stable it is)
+model="deepseek chat" # DeepSeek model used
 ```
